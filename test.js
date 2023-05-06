@@ -4,14 +4,6 @@ script.src = 'https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js'
 document.head.appendChild(script)
 var isInit = false
 
-script.onload = function () {
-	console.log('check script onload')
-	init();
-}
-
-setTimeout(() => {
-	init();
-}, 800)
 
 function init() {
 	if (isInit) {
@@ -46,3 +38,13 @@ function init() {
 
 	}
 }
+
+script.onload = function () {
+	console.log('check script onload')
+	init();
+}
+
+setTimeout(() => {
+	init();
+}, 800)
+
